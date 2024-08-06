@@ -3,6 +3,7 @@ import Loading from "../../Components/Loading/Loading";
 import ProductCard from "../../sellerpages/Components/ProductCard";
 import "../../sellerpages/Profile.css";
 import { get_cookies_data } from "../../Utility/Auth";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const url = "http://localhost:5000";
@@ -50,15 +51,20 @@ const Products = () => {
           {allProducts.map((product) => {
             return (
               <>
-                <ProductCard
-                  key={product.id}
-                  name={product.name}
-                  price={product.price}
-                  category={product.category}
-                  image_url={`${url}/seller/get_image/${product.id}/1`}
-                  best_seller={true}
-                  rating={product.rating}
-                />
+                <Link
+                  to={`/product/${product.id}/${product.name}`}
+                  className="link"
+                >
+                  <ProductCard
+                    key={product.id}
+                    name={product.name}
+                    price={product.price}
+                    category={product.category}
+                    image_url={`${url}/seller/get_image/${product.id}/1`}
+                    best_seller={true}
+                    rating={product.rating}
+                  />
+                </Link>
               </>
             );
           })}
