@@ -12,7 +12,7 @@ import {
   get_cookies_data,
 } from "../../Utility/Auth";
 
-const Navigation = () => {
+const Navigation = ({ isInside }) => {
   const navigate = useNavigate();
   const { isTokenValid, logout, setIsTokenValid } = useContext(AuthContext);
   const [search, setSearch] = useState("");
@@ -72,7 +72,7 @@ const Navigation = () => {
         <div className="main">
           <div className="logo">
             <NavLink to={"/"}>
-              <img src="l2.png" alt="logo" />
+              <img src="/l2.png" alt="logo" />
             </NavLink>
           </div>
           <nav className="nav-div">
@@ -88,7 +88,11 @@ const Navigation = () => {
                     to={item.url}
                   >
                     {item.title}
-                    <img src={item.img} alt="" className="user-img" />
+                    <img
+                      src={isInside ? `/${item.img}` : `/${item.img}`}
+                      alt=""
+                      className="user-img"
+                    />
                   </NavLink>
                 </li>
               ))}
@@ -102,7 +106,7 @@ const Navigation = () => {
                   to={"/profile"}
                 >
                   Profile
-                  <img src="user.png" alt="" className="user-img" />
+                  <img src="/user.png" alt="" className="user-img" />
                 </NavLink>
               </li>
               <li className="link-for-nav-user">
@@ -137,7 +141,7 @@ const Navigation = () => {
                   />
                   <button className="search-btn">
                     <img
-                      src="search.png"
+                      src="/search.png"
                       alt="search button"
                       className="search-img"
                     />
@@ -165,7 +169,7 @@ const Navigation = () => {
           )}
 
           <img
-            src="user.png"
+            src="/user.png"
             onClick={handel_click}
             alt=""
             className="user-img"
@@ -173,7 +177,7 @@ const Navigation = () => {
         </div>
         <div className="button-side2">
           <button className="login-register link" onClick={handleNavToggle}>
-            <img src="menu.png" alt="menu" className="menu-img" />
+            <img src="/menu.png" alt="menu" className="menu-img" />
           </button>
         </div>
       </div>
@@ -187,7 +191,7 @@ const Navigation = () => {
             onChange={(e) => handleSearch(e.target.value)}
           />
           <button className="search-btn">
-            <img src="search.png" alt="search button" className="search-img" />
+            <img src="/search.png" alt="search button" className="search-img" />
           </button>
         </div>
         <div className="hidden-lg-screen">

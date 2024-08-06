@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <div>
       {/* <NavBar /> */}
-      <Navigation />
+      <Navigation isInside={true} />
       <main>
         <Outlet />
       </main>

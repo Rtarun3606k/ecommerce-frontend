@@ -16,6 +16,8 @@ import SELLERProduct from "./sellerpages/Products";
 import SELLERLogin from "./sellerpages/Login";
 import Layout_seller from "./Components/Layout_seller";
 import SellerProduct from "./sellerpages/Products";
+import ProductPage from "./Pages/Product/ProductPage";
+import ProductLayout from "./Pages/Product/ProductLayout";
 
 const APPRouter = () => {
   return (
@@ -26,6 +28,9 @@ const APPRouter = () => {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="products" element={<Products />} />
+          <Route path="product" element={<ProductLayout />}>
+            <Route path=":id/:productname" element={<ProductPage />} />
+          </Route>
           <Route path="profile" element={<Profile />} />
           <Route path="register" element={<Register />} />
           <Route path="cart" element={<Cart />} />
