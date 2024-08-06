@@ -1,0 +1,59 @@
+.tile{
+    position: absolute;
+    top: 100%;
+    background-color: #feebe5;
+    width: 28%;
+    padding: 0px 12px;
+    /* align-items: flex-start; */
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 300%;
+    overflow-y: scroll;
+    z-index: 100;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 10px 6px rgba(0, 0, 0, 0.22);
+   }
+
+
+   .search-tile:hover{
+    background-color: #f7f7f7;
+    cursor: pointer;
+
+
+   }
+   .search-tile{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    margin: 4px 4px;
+    padding: 4px 4px;
+    /* border-bottom: 1px solid black; */
+
+   }
+
+
+
+   @media screen and (max-width: 768px){
+
+
+
+    .tile{
+        position: absolute;
+    top: 100%;
+    background-color: #feebe5;
+    width: 84%;
+    padding: 0px 12px;
+    /* align-items: flex-start; */
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 300%;
+    overflow-y: scroll;
+    margin-top: 0.2rem;
+    margin-right: 5%;
+    margin-left: 4%;
+    }
+   }

@@ -1,0 +1,194 @@
+.profile-container{
+    margin-top: 3rem;
+    display: flex;
+    gap: 5%;
+    width: 90;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    align-items: start;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.password{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.eye-btn{
+    width: 40px;
+}
+
+.right-profile, .left-profile{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    background: #f3d9d970;
+    padding: 3rem 3rem;
+    border-radius: 12px;
+}
+
+.profile_ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.profile-li{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem;
+    border-radius: 12px;
+    background: #f3adad5c;
+}
+.profile-li label{
+    color: black;
+    font-weight: bold;
+}
+
+.profile-btns{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 0.6rem;
+    padding: .3rem .5rem;
+    border-radius: 10px  ;
+    border: none;
+
+}
+
+.profile-btns:hover{
+    background: #f0a0a097;
+    border: 1px solid #b82e2e97;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-btn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: #f1f1f1;
+  }
+
+
+  input[type="text"] ,input[type="email"],input[type="textarea"],input[type="date"],input[type="password"]{
+    padding: 0.2rem 0.2rem;
+    border-radius: 4px;
+    border: none;
+    background: #feebe5;
+}
+
+input[type="textarea"]{
+    height: auto;
+    resize: both;
+    width: 100%;
+    overflow: "auto"
+}
+
+.login-register{
+    border: none;
+    font-size: 16px;
+    padding: 11px 14px;
+    background-color: #e4d9d6;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: background 0.3s ease-in , border-radius 0.3s ease-in;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px){
+    .profile-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .right-profile, .left-profile{
+        width: 90%;
+    }
+    .profile-li{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .profile-li label{
+        font-size: 0.8rem;
+    }
+    .profile-btns{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .profile-btns button{
+        width: 100%;
+    }
+    .profile-btns button:hover{
+        background: #f0a0a097;
+        border: 1px solid #b82e2e97;
+    }
+    .profile_ul{
+        gap: 1rem;
+    }
+    .login-register{
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    .flex-dir-row,.profile-btns{
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .profile-btns{
+      z-index: 99;
+
+    }
+  
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    /* justify-content: center; */
+    align-items: center;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-left: 12px;
+    cursor: pointer;
+}
