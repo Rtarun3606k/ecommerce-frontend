@@ -7,9 +7,10 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import { storedata } from "../../Utility/utility";
 import { useNavigate } from "react-router-dom";
+import { url } from "../../data/URL";
 
 const Login = () => {
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const navigation = useNavigate();
   const [loading, setLoading] = useState(false);
   const [phonenumber, setPhonenumber] = useState("");

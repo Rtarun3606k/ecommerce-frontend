@@ -6,10 +6,11 @@ import { check_token, delete_storedata } from "../../Utility/utility";
 import "../../Components/NavFoloder/Nav.css";
 import { toast } from "react-toastify";
 import { get_cookies_data } from "../../Utility/Auth";
+import { url } from "../../data/URL";
 
 const Update = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const [Loadingstate, setLoadingstate] = useState(false);
   const [UserData, setUserData] = useState({});
   const [dropdownVisible, setDropdownVisible] = useState(false);

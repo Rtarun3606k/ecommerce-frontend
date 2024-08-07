@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import { toast } from "react-toastify";
+import { url } from "../data/URL";
 
 export const store_cookies_data = (refresh_token, access_token) => {
   const authdata = {

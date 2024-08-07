@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { url } from "../data/URL";
 import {
   delete_cookies_storedata,
   edit_access_token,
@@ -7,7 +8,7 @@ import {
   get_cookies_data,
 } from "./Auth";
 
-const url = "http://localhost:5000";
+// const url = "http://localhost:5000";
 let session_access_token = get_cookies_data(false, true);
 let session_refresh_token = get_cookies_data(true, false);
 

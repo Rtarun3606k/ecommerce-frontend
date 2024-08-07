@@ -6,9 +6,10 @@ import { check_token, delete_storedata } from "../Utility/utility";
 import "../Components/NavFoloder/Navigation";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { url } from "../data/URL";
 
 const SELLERRegister = () => {
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const [Loadingstate, setLoadingstate] = useState(false);
   const [isRegistring, setisRegistring] = useState(false);
   const navigate = useNavigate();

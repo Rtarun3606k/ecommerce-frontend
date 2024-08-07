@@ -5,6 +5,7 @@ import "./Nav.css";
 import SearchTile from "./SearchTile";
 import { AuthContext } from "../../AuthContext";
 import { check_token, delete_storedata } from "../../Utility/utility";
+import { url } from "../../data/URL";
 
 const Navigation = () => {
   const navigate = useNavigate();

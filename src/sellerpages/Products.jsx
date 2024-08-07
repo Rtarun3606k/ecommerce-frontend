@@ -10,6 +10,7 @@ import { check_token } from "../Utility/utility";
 import Loading from "../Components/Loading/Loading";
 import ProductCard from "./Components/ProductCard";
 import { useNavigate } from "react-router-dom";
+import { url } from "../data/URL";
 
 const SellerProduct = () => {
   const navigate = useNavigate();
@@ -30,7 +31,7 @@ const SellerProduct = () => {
   });
   const [allProducts, setAllProducts] = useState([]);
 
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const handleChange = (e) => {
     const { name, value } = e.target;
     setProductData((prevData) => ({ ...prevData, [name]: value }));

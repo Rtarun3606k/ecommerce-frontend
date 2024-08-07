@@ -4,6 +4,7 @@ import "./Profile.css";
 import { useNavigate } from "react-router-dom";
 import { check_token, delete_storedata } from "../../Utility/utility";
 import "../../Components/NavFoloder/Nav.css";
+import { url } from "../../data/URL";
 import {
   delete_cookies_storedata,
   edit_access_token,
@@ -13,7 +14,7 @@ import {
 
 const Profile = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const [Loadingstate, setLoadingstate] = useState(false);
   const [UserData, setUserData] = useState({});
   const [dropdownVisible, setDropdownVisible] = useState(false);

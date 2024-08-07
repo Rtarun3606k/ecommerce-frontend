@@ -10,10 +10,11 @@ import {
   store_cookies_data,
   get_cookies_data,
 } from "../Utility/Auth";
+import { url } from "../data/URL";
 
 const SELLERProfile = () => {
   const navigate = useNavigate();
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const [Loadingstate, setLoadingstate] = useState(false);
   const [UserData, setUserData] = useState({});
   const [dropdownVisible, setDropdownVisible] = useState(false);

@@ -6,9 +6,10 @@ import { optionsC } from "../../Utility/utility";
 import { Link } from "react-router-dom";
 import Loading from "../../Components/Loading/Loading";
 import { AuthContext } from "../../AuthContext";
+import { url } from "../../data/URL";
 
 function Register() {
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const [Loadingstate, setLoadingstate] = useState(false);
   const [Loadingstateregister, setLoadingstateregister] = useState(false);
   const { setIsTokenValid } = useContext(AuthContext);

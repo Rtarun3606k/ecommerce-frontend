@@ -4,9 +4,9 @@ import ProductCard from "../../sellerpages/Components/ProductCard";
 import "../../sellerpages/Profile.css";
 import { get_cookies_data } from "../../Utility/Auth";
 import { Link } from "react-router-dom";
-
+import { url } from "../../data/URL";
 const Products = () => {
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const [Loadingstate, setLoadingstate] = useState(false);
   const [allProducts, setAllProducts] = useState([]);
 

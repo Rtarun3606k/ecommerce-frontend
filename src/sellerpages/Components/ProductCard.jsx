@@ -9,7 +9,7 @@ const ProductCard = ({
   best_seller,
   rating,
 }) => {
-  const url = "http://localhost:5000";
+  // const url = "http://localhost:5000";
   const name_shortner = (name) => {
     if (name.length > 20) {
       return name.slice(0, 20) + "...";
